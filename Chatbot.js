@@ -5,11 +5,16 @@ import ChatInput from './ChatInput';
 import api from './api';
 import './Chatbot.css';
 
-function Chatbot() {
+function Chatbot(greeting = null) {
   const [messages, setMessages] = useImmer([]);
   const [newMessage, setNewMessage] = useState('');
 
   const isLoading = messages.length && messages[messages.length - 1].loading;
+
+  // Default greeting.
+  if (!greeting) {
+    greeting = "<strong>Hello!</strong>  I am a chatbot.  I have been trained on the blog content of Koplowicz & Sons.  (Technically I am a RAG.)  Ask me anything about web development, and I'll answer based on Jordan's knowledge.";
+  }
 
   async function submitNewMessage() {
     const trimmedMessage = newMessage.trim();
@@ -41,9 +46,7 @@ function Chatbot() {
 
   return (
     <div className="chatbot">
-      {messages.length === 0 && (
-        <div><strong>Hello!</strong>  I am a chatbot.  I have been trained on the blog content of Koplowicz & Sons.  (Technically I am a RAG.)  Ask me anything about web development, and I'll answer based on Jordan's knowledge.</div>
-      )}
+      {messages.length === 0 && (<div>{greeting}</div>)}
       <ChatMessages
         messages={messages}
         isLoading={isLoading}
