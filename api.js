@@ -1,0 +1,33 @@
+const BASE_URL = process.env.REACT_APP_CHAT_URL;
+
+async function createChat() {
+  const res = await fetch(BASE_URL + '/chats', {
+    method: 'GET',
+    headers: { 'Content-Type': 'application/json' }
+  });
+  const data = await res.json();
+  if (!res.ok) {
+    return Promise.reject({ status: res.status, data });
+  }
+  return data;
+}
+
+async function sendChatMessage(message) {
+  const url = BASE_URL + message;
+  const res = await fetch(url, {
+    method: 'GET',
+    headers: { 'Content-Type': 'application/json' },
+    mode: 'cors',
+    credentials: 'include'
+  });
+  if (!res.ok) {
+    return Promise.reject({ status: res.status, data: await res.text() });
+  }
+
+  return await res.text();
+}
+
+export default {
+  createChat,
+  sendChatMessage
+};
