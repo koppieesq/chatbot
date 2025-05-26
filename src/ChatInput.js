@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useLayoutEffect, useRef } from 'react';
 
 function useAutosize(value) {
