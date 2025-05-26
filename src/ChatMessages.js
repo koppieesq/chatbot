@@ -2,7 +2,15 @@ import React from 'react';
 import Markdown from 'react-markdown';
 import useAutoScroll from './useAutoScroll';
 
-function ChatMessages({ messages, isLoading, Loader }) {
+function renderSafely(input) {
+  console.log("renderSafely", input);
+  if (typeof input === 'string') return input;
+  if (input && typeof input.text === 'string') return input.text;
+  if (input) return JSON.stringify(input);
+  return '';
+}
+
+function ChatMessages({ messages, isLoading }) {
   const scrollContentRef = useAutoScroll(isLoading);
 
   return (
@@ -11,10 +19,10 @@ function ChatMessages({ messages, isLoading, Loader }) {
         <div key={idx}>
           <div>
             <div>
-              {(loading && !content) ? <Loader />
+              {(loading && !content) ? <div className="loader">Loading...</div>
                 : (role === 'assistant')
-                  ? <Markdown>{content}</Markdown>
-                  : <div>{content}</div>
+                  ? <Markdown>{renderSafely(content)}</Markdown>
+                  : <div>{renderSafely(content)}</div>
               }
             </div>
             {error && (

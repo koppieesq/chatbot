@@ -5,15 +5,17 @@ import ChatMessages from './ChatMessages';
 import ChatInput from './ChatInput';
 import api from './api';
 
-function Chatbot(greeting = null) {
+function Chatbot({ greeting = null }) {
   const [messages, setMessages] = useImmer([]);
   const [newMessage, setNewMessage] = useState('');
 
   const isLoading = messages.length && messages[messages.length - 1].loading;
 
-  // Default greeting.
-  if (!greeting) {
-    greeting = "<strong>Hello!</strong>  I am a chatbot.  I have been trained on the blog content of Koplowicz & Sons.  (Technically I am a RAG.)  Ask me anything about web development, and I'll answer based on Jordan's knowledge.";
+  // Default greeting logic: allow both strings and React elements
+  console.log("greeting", greeting);
+  let greetingContent = greeting;
+  if (!greetingContent) {
+    greetingContent = "Hello! I am a chatbot. I have been trained on the blog content of Koplowicz & Sons. (Technically I am a RAG.) Ask me anything about web development, and I'll answer based on Jordan's knowledge.";
   }
 
   async function submitNewMessage() {
@@ -46,7 +48,13 @@ function Chatbot(greeting = null) {
 
   return (
     <div className="chatbot">
-      {messages.length === 0 && (<div>{greeting}</div>)}
+      {messages.length === 0 && (
+        <div>
+          {typeof greetingContent === "string"
+            ? <span>{greetingContent}</span>
+            : greetingContent}
+        </div>
+      )}
       <ChatMessages
         messages={messages}
         isLoading={isLoading}
