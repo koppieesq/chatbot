@@ -1,8 +1,7 @@
 import Markdown from 'react-markdown';
 import useAutoScroll from './useAutoScroll';
-import Loader from '../Loader';
 
-function ChatMessages({ messages, isLoading }) {
+function ChatMessages({ messages, isLoading, Loader }) {
   const scrollContentRef = useAutoScroll(isLoading);
 
   return (

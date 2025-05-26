@@ -3,7 +3,6 @@ import { useImmer } from 'use-immer';
 import ChatMessages from './ChatMessages';
 import ChatInput from './ChatInput';
 import api from './api';
-import './Chatbot.css';
 
 function Chatbot(greeting = null) {
   const [messages, setMessages] = useImmer([]);
