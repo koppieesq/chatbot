@@ -13,7 +13,6 @@ A reusable chatbot component for React projects.
 2. Import in your project:
    ```js
    import { Chatbot } from 'chatbot';
-   import 'chatbot/Chatbot.css'; // optional - for some minimal styling
    ```
 3. Use the components:
    ```jsx
