@@ -28,7 +28,7 @@ function ChatInput({ newMessage, isLoading, setNewMessage, submitNewMessage }) {
   }
 
   return(
-    <div>
+    <div className="chat-input">
       <textarea
         ref={textareaRef}
         rows='1'
