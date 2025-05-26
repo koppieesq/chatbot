@@ -3,7 +3,6 @@ import Markdown from 'react-markdown';
 import useAutoScroll from './useAutoScroll';
 
 function renderSafely(input) {
-  console.log("renderSafely", input);
   if (typeof input === 'string') return input;
   if (input && typeof input.text === 'string') return input.text;
   if (input) return JSON.stringify(input);

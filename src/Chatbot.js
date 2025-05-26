@@ -12,7 +12,6 @@ function Chatbot({ greeting = null }) {
   const isLoading = messages.length && messages[messages.length - 1].loading;
 
   // Default greeting logic: allow both strings and React elements
-  console.log("greeting", greeting);
   let greetingContent = greeting;
   if (!greetingContent) {
     greetingContent = "Hello! I am a chatbot. I have been trained on the blog content of Koplowicz & Sons. (Technically I am a RAG.) Ask me anything about web development, and I'll answer based on Jordan's knowledge.";
