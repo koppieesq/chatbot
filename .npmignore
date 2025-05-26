@@ -1,6 +1,3 @@
 src/
-*.js
-!dist/
-!package.json
-!README.md
-!LICENSE
+.env
+.idea/
