@@ -16,5 +16,11 @@
   },
   "scripts": {
     "build": "babel . --out-dir dist --ignore dist,node_modules,.git --extensions .js,.jsx"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1"
   }
 }
