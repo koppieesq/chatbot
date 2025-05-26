@@ -4,15 +4,17 @@ A reusable chatbot component for React projects.
 
 ## Usage
 
-1. Install as a local dependency:
+1. Install as a dependency:
    ```sh
-   npm install /path/to/chatbot
-   # or
-   yarn add /path/to/chatbot
+   npm install @koppieesq/chatbot
    ```
 2. Import in your project:
    ```js
-   import { Chatbot } from 'chatbot';
+   import Chatbot from 'chatbot';
+   ```
+3. Add environment variable to your project:
+   ```dotenv
+   REACT_APP_API_URL='https://0.0.0.0:8000'
    ```
 3. Use the components:
    ```jsx
