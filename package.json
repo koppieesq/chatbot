@@ -4,8 +4,12 @@
   "description": "A reusable React chatbot component.",
   "main": "index.js",
   "module": "index.js",
-  "author": "",
-  "license": "MIT",
+  "author": "koppieesq",
+  "license": "GPL-2.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:koppieesq/chatbot.git"
+  },
   "peerDependencies": {
     "react": ">=17.0.0",
     "react-dom": ">=17.0.0"
