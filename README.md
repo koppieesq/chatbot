@@ -18,5 +18,5 @@ A reusable chatbot component for React projects.
    ```
 3. Use the components:
    ```jsx
-   <Chatbot greeting="Hello! How can I help you?" />
+   <Chatbot greeting="Hello! How can I help you?" apiUrl={process.env.REACT_APP_API_URL} />
    ```

@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="448c7afe-2964-4a0b-85d1-ed174c49326b" name="Changes" comment="add dependencies to package.json">
+    <list default="true" id="448c7afe-2964-4a0b-85d1-ed174c49326b" name="Changes" comment="Move BASE_URL inside function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chatbot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chatbot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748301800521</updated>
-      <workItem from="1748301801614" duration="3622000" />
+      <workItem from="1748301801614" duration="5452000" />
     </task>
     <task id="LOCAL-00001" summary="Remove css; use the div classes instead">
       <option name="closed" value="true" />
@@ -98,16 +100,48 @@
       <option name="project" value="LOCAL" />
       <updated>1748302333428</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Move BASE_URL inside function">
+      <option name="closed" value="true" />
+      <created>1748305896872</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748305896872</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Remove css; use the div classes instead" />
     <MESSAGE value="update README.md" />
     <MESSAGE value="add dependencies to package.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dependencies to package.json" />
+    <MESSAGE value="Move BASE_URL inside function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move BASE_URL inside function" />
   </component>
 </project>

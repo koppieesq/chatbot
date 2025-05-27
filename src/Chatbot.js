@@ -5,9 +5,14 @@ import ChatMessages from './ChatMessages';
 import ChatInput from './ChatInput';
 import api from './api';
 
-function Chatbot({ greeting = null }) {
+function Chatbot({ greeting = null, apiUrl = null }) {
   const [messages, setMessages] = useImmer([]);
   const [newMessage, setNewMessage] = useState('');
+
+  // If there is no api url, then exit early.
+  if (!apiUrl) {
+    return <div><p>Chatbot requires an API URL. Please set the REACT_APP_API_URL environment variable.</p></div>;
+  }
 
   const isLoading = messages.length && messages[messages.length - 1].loading;
 
@@ -28,7 +33,7 @@ function Chatbot({ greeting = null }) {
     setNewMessage('');
 
     try {
-      const stream = await api.sendChatMessage(trimmedMessage);
+      const stream = await api.sendChatMessage({trimmedMessage, apiUrl});
       setMessages(draft => {
         draft[draft.length - 1].content += stream;
       });

@@ -10,10 +10,9 @@ async function createChat() {
   return data;
 }
 
-async function sendChatMessage(message) {
+async function sendChatMessage({message, apiUrl}) {
   // Set up the url to send the message.
-  const BASE_URL = process.env.REACT_APP_CHAT_URL;
-  const url = BASE_URL + message;
+  const url = apiUrl + message;
   const res = await fetch(url, {
     method: 'GET',
     headers: { 'Content-Type': 'application/json' },
