@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="448c7afe-2964-4a0b-85d1-ed174c49326b" name="Changes" comment="Move BASE_URL inside function">
+    <list default="true" id="448c7afe-2964-4a0b-85d1-ed174c49326b" name="Changes" comment="BASE_URL is now passed from parent">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chatbot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chatbot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748301800521</updated>
-      <workItem from="1748301801614" duration="5452000" />
+      <workItem from="1748301801614" duration="6202000" />
     </task>
     <task id="LOCAL-00001" summary="Remove css; use the div classes instead">
       <option name="closed" value="true" />
@@ -108,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748305896872</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="BASE_URL is now passed from parent">
+      <option name="closed" value="true" />
+      <created>1748365860546</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748365860547</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +148,7 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="add dependencies to package.json" />
     <MESSAGE value="Move BASE_URL inside function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move BASE_URL inside function" />
+    <MESSAGE value="BASE_URL is now passed from parent" />
+    <option name="LAST_COMMIT_MESSAGE" value="BASE_URL is now passed from parent" />
   </component>
 </project>
