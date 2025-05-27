@@ -1,5 +1,3 @@
-const BASE_URL = process.env.REACT_APP_CHAT_URL;
-
 async function createChat() {
   const res = await fetch(BASE_URL + '/chats', {
     method: 'GET',
@@ -13,6 +11,8 @@ async function createChat() {
 }
 
 async function sendChatMessage(message) {
+  // Set up the url to send the message.
+  const BASE_URL = process.env.REACT_APP_CHAT_URL;
   const url = BASE_URL + message;
   const res = await fetch(url, {
     method: 'GET',
