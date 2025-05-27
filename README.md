@@ -20,3 +20,13 @@ A reusable chatbot component for React projects.
    ```jsx
    <Chatbot greeting="Hello! How can I help you?" apiUrl={process.env.REACT_APP_API_URL} />
    ```
+
+## Troubleshooting
+
+If you experience CORS issues, add the following environment variables:
+
+```dotenv
+NODE_TLS_REJECT_UNAUTHORIZED=0
+DANGEROUSLY_DISABLE_HOST_CHECK=true
+REACT_APP_IGNORE_SSL=true
+```
