@@ -12,7 +12,7 @@ async function createChat() {
 
 async function sendChatMessage({message, apiUrl}) {
   // Set up the url to send the message.
-  const url = apiUrl + message;
+  const url = apiUrl + '/chat/' + message;
   console.log(url);
   const res = await fetch(url, {
     method: 'GET',
