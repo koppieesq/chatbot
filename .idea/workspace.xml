@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="448c7afe-2964-4a0b-85d1-ed174c49326b" name="Changes" comment="adds debug output">
+    <list default="true" id="448c7afe-2964-4a0b-85d1-ed174c49326b" name="Changes" comment="fix url generator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chatbot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chatbot.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748301800521</updated>
-      <workItem from="1748301801614" duration="6433000" />
+      <workItem from="1748301801614" duration="7568000" />
     </task>
     <task id="LOCAL-00001" summary="Remove css; use the div classes instead">
       <option name="closed" value="true" />
@@ -122,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748366663329</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix url generator">
+      <option name="closed" value="true" />
+      <created>1748366838018</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1748366838018</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +166,7 @@
     <MESSAGE value="Move BASE_URL inside function" />
     <MESSAGE value="BASE_URL is now passed from parent" />
     <MESSAGE value="adds debug output" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds debug output" />
+    <MESSAGE value="fix url generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix url generator" />
   </component>
 </project>

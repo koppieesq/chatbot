@@ -33,7 +33,7 @@ function Chatbot({ greeting = null, apiUrl = null }) {
     setNewMessage('');
 
     try {
-      const stream = await api.sendChatMessage({trimmedMessage, apiUrl});
+      const stream = await api.sendChatMessage({message:trimmedMessage, apiUrl});
       setMessages(draft => {
         draft[draft.length - 1].content += stream;
       });
